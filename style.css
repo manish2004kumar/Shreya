@@ -1,0 +1,84 @@
+body {
+    margin: 0;
+    padding: 0;
+    background: #f2f2f2;
+    font-family: "Acme";
+    background: #000;
+}
+
+.container {
+    max-width: 1000px;
+    margin: 100px auto;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+}
+
+.Manish:hover:nth-child(2) {
+    box-shadow: 10px 10px 50px rgb(13, 117, 214);
+}
+
+.Manish {
+    position: relative;
+    margin: 20px 0;
+    width: 300px;
+    height: 400px;
+    background: #fff;
+    transform-style: preserve-3d;
+    transform: perspective(2000px);
+    transition: 1s;
+}
+
+.Manish:hover {
+    z-index: 1111;
+    transform: perspective(2000px) rotate(-10deg);
+    box-shadow: 10px 10px 50px rgb(223, 62, 17);
+}
+
+.Manish .img-container {
+    position: relative;
+    width: 100%;
+    height: 100%;
+    border: 2px solid #000;
+    box-sizing: border-box;
+    transform-origin: left;
+    z-index: 1;
+    transition: 1s;
+}
+
+.Manish .img-container img {
+    position: absolute;
+    left: 0;
+    top: 0;
+    height: 115%;
+    width: 100%;
+    object-fit: cover;
+}
+
+.Manish:hover .img-container {
+    transform: rotateY(-135deg);
+}
+
+.Manish .Manish-details {
+    position: absolute;
+    left: 0;
+    top: 10px;
+    box-sizing: border-box;
+    padding: 20px;
+    color: #08105c;
+}
+
+.Manish .Manish-details h2 {
+    margin: 0;
+    padding: 0.5em 0;
+    text-transform: uppercase;
+    font-size: 2em;
+    color: #151c81;
+}
+
+.Manish .Manish-details p {
+    margin: 0;
+    padding: 0;
+    line-height: 25px;
+    font-size: 1.1em;
+}
